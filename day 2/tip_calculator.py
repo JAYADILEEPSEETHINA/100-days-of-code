@@ -1,0 +1,7 @@
+print("Welcome to the trip calculator.")
+total_bill=input("What was the total bill? $") 
+total_people=input("How many people to split the bill? ")
+tips=input("How much tip would you like to give? 10, 12, or 15?")
+final_bill=float(total_bill)+float(tips)
+bill_for_each_person=final_bill/float(total_people)
+print("each person should pay: $"+str(round(bill_for_each_person,2)))
